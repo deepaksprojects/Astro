@@ -13,6 +13,7 @@ import "react-native-reanimated";
 import { useColorScheme } from "@/components/useColorScheme";
 import { SafeAreaView } from "react-native-safe-area-context";
 
+
 export {
   // Catch any errors thrown by the Layout component.
   ErrorBoundary,
