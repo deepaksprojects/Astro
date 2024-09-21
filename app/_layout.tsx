@@ -7,10 +7,12 @@ import {
 import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "react-native-reanimated";
 
 import { useColorScheme } from "@/components/useColorScheme";
+import { SafeAreaView } from "react-native-safe-area-context";
+
 
 export {
   // Catch any errors thrown by the Layout component.
@@ -19,6 +21,11 @@ export {
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
+
+export const unstable_settings = {
+  // Used for `(foo)`
+  initialRouteName: "(auth)",
+};
 
 export default function RootLayout() {
   const [loaded, error] = useFonts({
@@ -48,10 +55,13 @@ function RootLayoutNav() {
   const colorScheme = useColorScheme();
   return (
     <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(auth)" options={{ headerShown: false }} />
-        <Stack.Screen name="modal" options={{ presentation: "modal" }} />
-      </Stack>
+      <SafeAreaView style={{ flex: 1 }}>
+        <Stack>
+          <Stack.Screen name="index" options={{ headerShown: false }} />
+          <Stack.Screen name="onBoarding" options={{ headerShown: false }} />
+          <Stack.Screen name="modal" options={{ presentation: "modal" }} />
+        </Stack>
+      </SafeAreaView>
     </ThemeProvider>
   );
 }
