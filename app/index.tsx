@@ -1,12 +1,16 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Text } from "react-native";
+import React, { useState } from "react";
+import PrimaryButton from "@/components/button/button";
 
 const HomeScreen = () => {
+  const [loading, setLoading] = useState(false);
   return (
-    <View>
-      <Text>HomeScreen</Text>
-    </View>
-  )
-}
+    <PrimaryButton
+      loading={loading}
+      onClick={() => setLoading(!loading)}
+      title="Primary Button"
+    />
+  );
+};
 
-export default HomeScreen
+export default HomeScreen;
