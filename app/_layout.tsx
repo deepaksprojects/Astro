@@ -24,7 +24,7 @@ SplashScreen.preventAutoHideAsync();
 
 export const unstable_settings = {
   // Used for `(foo)`
-  initialRouteName: "(auth)",
+  initialRouteName: "/",
 };
 
 export default function RootLayout() {
@@ -60,6 +60,7 @@ function RootLayoutNav() {
           <Stack>
             <Stack.Screen name="index" options={{ headerShown: false }} />
             <Stack.Screen name="onBoarding" options={{ headerShown: false }} />
+            <Stack.Screen name="(auth)" options={{ headerShown: false }} />
             <Stack.Screen name="modal" options={{ presentation: "modal" }} />
           </Stack>
         </SafeAreaView>

@@ -3,7 +3,7 @@ import { ColorType } from "./colors";
 
 interface ButtonInterface {
   title: string;
-  onClick: () => void;
+  onClick?: () => void;
   textColor?: ColorType;
   color?: ColorType;
   style?: ViewStyle;

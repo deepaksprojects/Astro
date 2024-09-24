@@ -3,7 +3,7 @@ import { GlobalStyles } from "./globalStyle";
 import { onBoardingStyles } from "./onBoardingStyles";
 const globalTextStyle = GlobalStyles.textStyle;
 const onBoardImageBG = onBoardingStyles.imageBackground;
-
+const onBoardingButton = onBoardingStyles.button;
 /**
  * Resize mode enum
  * @enum only resize mode for image
@@ -17,4 +17,4 @@ const ResizeMode = Object.freeze({
   STRETCH: "stretch",
 });
 
-export { globalTextStyle, onBoardImageBG, ResizeMode };
+export { globalTextStyle, onBoardImageBG, ResizeMode,onBoardingButton };
