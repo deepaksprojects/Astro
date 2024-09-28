@@ -1,2 +1,3 @@
 import { PrimaryButtonType } from "./button";
-export { PrimaryButtonType };
+import { WithImageBackgroundType } from "./hoc";
+export { PrimaryButtonType, WithImageBackgroundType };

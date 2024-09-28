@@ -7,7 +7,7 @@ import {
   onBoardingButton,
   ResizeMode,
 } from "@/constants/styles";
-import { Link, Redirect, useRouter } from "expo-router";
+import { useRouter } from "expo-router";
 import React from "react";
 import { ImageBackground, Text } from "react-native";
 
