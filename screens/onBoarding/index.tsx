@@ -4,12 +4,18 @@ import { OnBoardingImage } from "@/constants/images";
 import {
   globalTextStyle,
   onBoardImageBG,
+  onBoardingButton,
   ResizeMode,
 } from "@/constants/styles";
+import { Link, Redirect, useRouter } from "expo-router";
 import React from "react";
 import { ImageBackground, Text } from "react-native";
 
 const OnBoardingScreen = () => {
+  const router = useRouter();
+  function navigateToNext() {
+    router.navigate("/(auth)/login");
+  }
   return (
     <ImageBackground
       resizeMode={ResizeMode.COVER}
@@ -31,15 +37,9 @@ const OnBoardingScreen = () => {
 
       <PrimaryButton
         title="Get Started"
-        loading={true}
-        onClick={() => ""}
-        buttonStyle={{
-          marginBottom: 50,
-          height: 45,
-          alignItems: "center",
-          justifyContent: "center",
-          borderRadius: 10,
-        }}
+        loading={false}
+        onClick={navigateToNext}
+        buttonStyle={onBoardingButton}
         textStyle={{ color: "#FFFFFF", fontWeight: "bold" }}
       />
     </ImageBackground>

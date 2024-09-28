@@ -1,11 +1,13 @@
-import { View, Text } from "react-native";
-import React from "react";
 import { Stack } from "expo-router";
+import React from "react";
 
+export const unstable_settings = {
+  // Used for `(foo)`
+  initialRouteName: "/",
+};
 const AuthLayout = () => {
   return (
     <Stack>
-      <Stack.Screen name="onBoarding" options={{ headerShown: false }} />
       <Stack.Screen name="login" options={{ headerShown: false }} />
       <Stack.Screen name="signIn" options={{ headerShown: false }} />
     </Stack>
