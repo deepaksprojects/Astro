@@ -6,7 +6,7 @@ const primaryDarkColor = "#4e28b3";
 const secondaryColor = "#ffb84d";
 const accentColor = "#4dc0ff";
 const backgroundColor = "#f4f1ff";
-const textColor = "#2c2239";
+const textColor = "#FFFFFF";
 const errorColor = "#ff4d4f";
 
 export default {
