@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { textColor } from "../Colors";
+import { textColorLight } from "../Colors";
 
 export const GlobalStyles = StyleSheet.create({
   textStyle: { color: "#FFFFFF", fontWeight: "bold", lineHeight: 20 },
@@ -7,7 +7,7 @@ export const GlobalStyles = StyleSheet.create({
     flex: 1,
   },
   color: {
-    color: textColor,
+    color: textColorLight,
   },
 });
 /**
