@@ -1,14 +1,13 @@
-import React, { useEffect, useState } from "react";
-import WithBackgroundImage from "@/components/hocs/ImageBackground";
-import { LoginImage } from "@/constants/images";
-import { Button, Text } from "react-native-paper";
-import { StyleSheet, View } from "react-native";
-import { F1, WhiteColor } from "@/constants/styles";
-import { inputBackgroundColor, textColorLight } from "@/constants/Colors";
 import PrimaryButton from "@/components/button/button";
-import OtpTextInput from "react-native-text-input-otp";
-import { useRoute } from "@react-navigation/native";
+import WithBackgroundImage from "@/components/hocs/ImageBackground";
+import { inputBackgroundColor, textColorLight } from "@/constants/Colors";
+import { LoginImage } from "@/constants/images";
+import { F1, WhiteColor } from "@/constants/styles";
 import { useRouter } from "expo-router";
+import React, { useEffect, useState } from "react";
+import { StyleSheet, View } from "react-native";
+import { Button, Text } from "react-native-paper";
+import OtpTextInput from "react-native-text-input-otp";
 
 const OTP = () => {
   const [otp, setOtp] = React.useState("");
@@ -34,7 +33,7 @@ const OTP = () => {
   const router = useRouter();
 
   const handleSubmit = () => {
-    router.replace("/(unauth)");
+    router.replace("/");
   };
 
   return (
@@ -45,7 +44,7 @@ const OTP = () => {
             Verification
           </Text>
           <Text variant="labelSmall" style={WhiteColor}>
-            Confirmation ode has been sent to you on 123456799
+            Confirmation code has been sent to you on 123456799
           </Text>
         </View>
         <View style={otpStyle.inputHandler}>
