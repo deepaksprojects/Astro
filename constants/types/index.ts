@@ -1,3 +1,4 @@
 import { PrimaryButtonType } from "./button";
 import { WithImageBackgroundType } from "./hoc";
-export { PrimaryButtonType, WithImageBackgroundType };
+import { WithFormikType } from "./hoc";
+export { PrimaryButtonType, WithImageBackgroundType, WithFormikType };
