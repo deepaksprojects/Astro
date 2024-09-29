@@ -6,8 +6,9 @@ const primaryDarkColor = "#4e28b3";
 const secondaryColor = "#ffb84d";
 const accentColor = "#4dc0ff";
 const backgroundColor = "#f4f1ff";
-const textColor = "#2c2239";
+const textColorLight = "#FFFFFF";
 const errorColor = "#ff4d4f";
+const inputBackgroundColor = "#240f3b";
 
 export default {
   light: {
@@ -35,5 +36,6 @@ export {
   accentColor,
   errorColor,
   backgroundColor,
-  textColor,
+  textColorLight,
+  inputBackgroundColor,
 };

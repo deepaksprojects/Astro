@@ -1,4 +1,8 @@
-import { primaryColor, primaryColorLight } from "@/constants/Colors";
+import {
+  primaryColor,
+  primaryColorLight,
+  textColorLight,
+} from "@/constants/Colors";
 import { PrimaryButtonType } from "@/constants/types";
 import React, { useEffect } from "react";
 import { Pressable, StyleSheet, Text } from "react-native";
@@ -21,6 +25,7 @@ const PrimaryButton = ({
   color,
   buttonStyle = primaryButtonStyle.buttonBaseStyle,
   buttonProps,
+  textColor = textColorLight,
 }: PrimaryButtonType) => {
   const offset = useSharedValue(0);
   const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
@@ -47,7 +52,7 @@ const PrimaryButton = ({
       onPress={onClick}
       {...buttonProps}
     >
-      <Text style={textStyle}>{title}</Text>
+      <Text style={[textStyle, { color: textColor }]}>{title}</Text>
     </AnimatedPressable>
   );
 };
