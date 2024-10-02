@@ -13,3 +13,18 @@ export type WithFormikType = {
   validationSchema: any;
   children: ReactNode;
 };
+
+interface CustomHorizontalScrollViewProps<T> {
+  title: string;
+  onSeeAll: () => void;
+  data: T[];
+  renderItem: (item: T, index: number) => JSX.Element;
+}
+export type HorizontalGridType<T extends { id: string }> =
+  CustomHorizontalScrollViewProps<T>;
+
+export interface GridItem {
+  id: string;
+  name: string;
+  imageUrl: string;
+}
