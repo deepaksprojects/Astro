@@ -1,6 +1,7 @@
 import { secondaryColor, textColorLight } from "@/constants/Colors";
 import { NumerologyCard } from "@/constants/images";
 import { WhiteColor } from "@/constants/styles";
+import { Link } from "expo-router";
 import React from "react";
 import {
   ImageBackground,
@@ -22,20 +23,22 @@ const ServiceCard = ({
   desc = "hello",
 }: ServiceCardTypes) => {
   return (
-    <Card style={cardStyle.container}>
-      <ImageBackground source={image} style={cardStyle.imageStyle}>
-        <Card.Content style={cardStyle.content}>
-          <View>
-            <Text style={[cardStyle.text, WhiteColor]}>{name}</Text>
-            <Text style={[cardStyle.text, WhiteColor]}>{desc}</Text>
-          </View>
+    <Link href={"/(unauth)/chat"}>
+      <Card style={cardStyle.container}>
+        <ImageBackground source={image} style={cardStyle.imageStyle}>
+          <Card.Content style={cardStyle.content}>
+            <View>
+              <Text style={[cardStyle.text, WhiteColor]}>{name}</Text>
+              <Text style={[cardStyle.text, WhiteColor]}>{desc}</Text>
+            </View>
 
-          <View style={cardStyle.iconContainer}>
-            <Icon size={20} source={"arrow-right"} color={textColorLight} />
-          </View>
-        </Card.Content>
-      </ImageBackground>
-    </Card>
+            <View style={cardStyle.iconContainer}>
+              <Icon size={20} source={"arrow-right"} color={textColorLight} />
+            </View>
+          </Card.Content>
+        </ImageBackground>
+      </Card>
+    </Link>
   );
 };
 
