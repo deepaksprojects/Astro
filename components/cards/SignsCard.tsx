@@ -1,16 +1,44 @@
-import { View, Text } from "react-native";
-import React from "react";
+import { View, Text, StyleSheet, Pressable } from "react-native";
+import React, { forwardRef, ReactNode } from "react";
 import { Card } from "react-native-paper";
+import { WIDTH } from "@/constants/styles";
+import { primaryColorLight } from "@/constants/Colors";
+import { useRouter } from "expo-router";
 
-const SignsCard = () => {
+type SignCardType = {
+  label: string;
+  children: ReactNode;
+};
+
+const SignsCard = forwardRef(({ label, children }: SignCardType, ref) => {
+  const router = useRouter();
+
+  function handlePress() {
+    router.navigate("/(unauth)/profile");
+  }
+
   return (
-    <Card>
+    <Card
+      mode="contained"
+      style={cardStyle.cardContainer}
+      onPress={handlePress}
+    >
       <Card.Content>
-        <Text>Image</Text>
-        <Text>name</Text>
+        {children}
+        <Text>{label}</Text>
       </Card.Content>
     </Card>
   );
-};
+});
 
 export default SignsCard;
+
+const cardStyle = StyleSheet.create({
+  cardContainer: {
+    width: WIDTH / 5,
+    backgroundColor: primaryColorLight,
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: 12,
+  },
+});
