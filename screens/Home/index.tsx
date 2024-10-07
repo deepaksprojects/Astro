@@ -1,25 +1,13 @@
-import HomeBanner from "@/components/banners/HomeBanner";
 import SignsCard from "@/components/cards/SignsCard";
-import AstrologerCard from "@/components/cards/AstrologerCard";
-import HomeHeader from "@/components/headers/homeHeader";
-import HorizontalGrid from "@/components/hocs/HorizontalGrid";
 import { primaryDarkColor } from "@/constants/Colors";
-import { AvatarImage } from "@/constants/images";
 
-import { ServiceCard } from "@/components/cards";
-import HomeHeader from "@/components/headers/homeHeader";
-import HorizontalGrid from "@/components/hocs/HorizontalGrid";
-import { primaryDarkColor } from "@/constants/Colors";
-import { NumerologyCard } from "@/constants/images";
+import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import React from "react";
 import { StyleSheet, View } from "react-native";
-import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
-import { Link } from "expo-router";
 
 const HomeScreen = () => {
   return (
     <View style={HomeStyle.ContainerStyle}>
-
       <SignsCard
         label="aries"
         children={
