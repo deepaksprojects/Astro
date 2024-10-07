@@ -19,6 +19,7 @@ import { Link } from "expo-router";
 const HomeScreen = () => {
   return (
     <View style={HomeStyle.ContainerStyle}>
+
       <SignsCard
         label="aries"
         children={
