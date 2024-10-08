@@ -1,9 +1,7 @@
 import HomeBanner from "@/components/banners/HomeBanner";
-import SignsCard from "@/components/cards/SignsCard";
 import HomeHeader from "@/components/headers/homeHeader";
 import { primaryDarkColor } from "@/constants/Colors";
 
-import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import React from "react";
 import { StyleSheet, View } from "react-native";
 
@@ -12,7 +10,6 @@ const HomeScreen = () => {
     <View style={HomeStyle.ContainerStyle}>
       <HomeHeader />
       <HomeBanner />
-      
 
       {/* horizontal with see all button // Todo : Top astrologer cards with scroll */}
       {/* <HorizontalGrid
