@@ -1,4 +1,6 @@
+import HomeBanner from "@/components/banners/HomeBanner";
 import SignsCard from "@/components/cards/SignsCard";
+import HomeHeader from "@/components/headers/homeHeader";
 import { primaryDarkColor } from "@/constants/Colors";
 
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
@@ -8,14 +10,9 @@ import { StyleSheet, View } from "react-native";
 const HomeScreen = () => {
   return (
     <View style={HomeStyle.ContainerStyle}>
-      <SignsCard
-        label="aries"
-        children={
-          <MaterialCommunityIcons name="zodiac-aries" size={24} color="black" />
-        }
-      />
-      {/* <HomeHeader />
-      <HomeBanner /> */}
+      <HomeHeader />
+      <HomeBanner />
+      
 
       {/* horizontal with see all button // Todo : Top astrologer cards with scroll */}
       {/* <HorizontalGrid

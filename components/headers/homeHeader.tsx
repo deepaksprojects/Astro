@@ -7,10 +7,12 @@ import { WhiteColor } from "@/constants/styles";
 const HomeHeader = () => {
   return (
     <View style={headerStyle.container}>
-      <Avatar.Image size={40} source={AvatarImage} />
+      <Avatar.Image size={60} source={AvatarImage} />
       <View>
-        <Text style={[WhiteColor, headerStyle.textStyle]}>Hello User</Text>
-        <Text style={[WhiteColor, headerStyle.textStyle]}>
+        <Text variant="labelMedium" style={[WhiteColor]}>
+          Hello User
+        </Text>
+        <Text variant="titleMedium" style={[WhiteColor]}>
           Welcome to Astrology world
         </Text>
       </View>
@@ -27,6 +29,11 @@ const headerStyle = StyleSheet.create({
     marginVertical: 20,
     marginHorizontal: 10,
     alignItems: "center",
+  },
+
+  name: {
+    // fontWeight: "bold",
+    fontSize: 14,
   },
 
   textStyle: {
