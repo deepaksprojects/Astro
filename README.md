@@ -18,7 +18,7 @@ The **Astro** is an innovative mobile application designed to connect users with
 - **Framework**: React Native
 - **State Management**: [Redux](https://redux.js.org/) 
 - **Chat Functionality**: [Firebase](https://firebase.google.com/) for real-time chat
-- **Navigation**: [Expo_Router](https://docs.expo.dev/router/introduction/)
+- **Navigation**: [Expo-Router](https://docs.expo.dev/router/introduction/)
 - **APIs**: Custom astrology APIs
 
 ## Installation
@@ -27,4 +27,4 @@ To run the Astrology App locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/astrology-app.git
+   https://github.com/deepaksprojects/Astro.git
