@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "image": "https://randomuser.me/api/portraits/men/1.jpg",
+    "rating": 4.2,
+    "name": "John Doe",
+    "price": 85
+  },
+  {
+    "id": 2,
+    "image": "https://randomuser.me/api/portraits/women/2.jpg",
+    "rating": 3.5,
+    "name": "Jane Smith",
+    "price": 45
+  },
+  {
+    "id": 3,
+    "image": "https://randomuser.me/api/portraits/men/3.jpg",
+    "rating": 4.8,
+    "name": "Michael Johnson",
+    "price": 60
+  },
+  {
+    "id": 4,
+    "image": "https://randomuser.me/api/portraits/women/4.jpg",
+    "rating": 3.9,
+    "name": "Emma Brown",
+    "price": 30
+  },
+  {
+    "id": 5,
+    "image": "https://randomuser.me/api/portraits/men/5.jpg",
+    "rating": 4.1,
+    "name": "James Wilson",
+    "price": 75
+  },
+  {
+    "id": 6,
+    "image": "https://randomuser.me/api/portraits/women/6.jpg",
+    "rating": 4.6,
+    "name": "Olivia Taylor",
+    "price": 55
+  },
+  {
+    "id": 7,
+    "image": "https://randomuser.me/api/portraits/men/7.jpg",
+    "rating": 3.7,
+    "name": "William Davis",
+    "price": 20
+  },
+  {
+    "id": 8,
+    "image": "https://randomuser.me/api/portraits/women/8.jpg",
+    "rating": 4.5,
+    "name": "Sophia Garcia",
+    "price": 95
+  },
+  {
+    "id": 9,
+    "image": "https://randomuser.me/api/portraits/men/9.jpg",
+    "rating": 3.2,
+    "name": "Elijah Martinez",
+    "price": 40
+  },
+  {
+    "id": 10,
+    "image": "https://randomuser.me/api/portraits/women/10.jpg",
+    "rating": 4.0,
+    "name": "Mia Rodriguez",
+    "price": 65
+  }
+]

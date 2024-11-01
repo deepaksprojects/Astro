@@ -23,15 +23,14 @@ const ServiceCard = ({
   desc = "hello",
 }: ServiceCardTypes) => {
   return (
-    <Link href={"/(unauth)/chat"}>
+    <Link href={"/(unauth)/chat"} asChild>
       <Card style={cardStyle.container}>
         <ImageBackground source={image} style={cardStyle.imageStyle}>
           <Card.Content style={cardStyle.content}>
             <View>
-              <Text style={[cardStyle.text, WhiteColor]}>{name}</Text>
-              <Text style={[cardStyle.text, WhiteColor]}>{desc}</Text>
+              <Text style={[cardStyle.text]}>{name}</Text>
+              <Text style={[cardStyle.text]}>{desc}</Text>
             </View>
-
             <View style={cardStyle.iconContainer}>
               <Icon size={20} source={"arrow-right"} color={textColorLight} />
             </View>
@@ -46,7 +45,9 @@ export default ServiceCard;
 
 const cardStyle = StyleSheet.create({
   container: {
-    height: 120,
+    height: 150,
+    marginVertical: 8,
+    paddingVertical: 8,
   },
   imageStyle: {
     height: "100%",

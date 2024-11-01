@@ -17,8 +17,9 @@ export default {
     tint: tintColorLight,
     tabIconDefault: "#ccc",
     tabIconSelected: tintColorLight,
-    primaryColor,
-    primaryColorLight,
+    BACKGROUND_COLOR: "#0D0628",
+    PRIMARY_COLOR: "#14093C",
+    BUTTON_COLOR: "#614B9F",
   },
   dark: {
     text: "#fff",

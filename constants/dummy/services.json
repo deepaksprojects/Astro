@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Numerology",
+    "description": "Unlock the secrets of numbers and discover their impact on your life path and personality.",
+    "backgroundImage": "https://images.pexels.com/photos/3926226/pexels-photo-3926226.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+  },
+  {
+    "id": 2,
+    "title": "Compatibility",
+    "description": "Find harmony in relationships by exploring zodiac compatibility based on astrological insights.",
+    "backgroundImage": "https://images.pexels.com/photos/2292007/pexels-photo-2292007.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+  },
+  {
+    "id": 3,
+    "title": "Palm Reading",
+    "description": "Dive into the ancient art of palmistry to uncover what the lines on your hands reveal about you.",
+    "backgroundImage": "https://images.pexels.com/photos/1000518/pexels-photo-1000518.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+  },
+  {
+    "id": 4,
+    "title": "Natal Chart",
+    "description": "Get a personalized natal chart to understand the influence of celestial bodies on your birth.",
+    "backgroundImage": "https://images.pexels.com/photos/6629670/pexels-photo-6629670.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+  }
+]

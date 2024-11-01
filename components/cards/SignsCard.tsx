@@ -23,7 +23,7 @@ const SignsCard = forwardRef(({ label, children }: SignCardType, ref) => {
       style={cardStyle.cardContainer}
       onPress={handlePress}
     >
-      <Card.Content>
+      <Card.Content style={cardStyle.contentStyle}>
         {children}
         <Text>{label}</Text>
       </Card.Content>
@@ -40,5 +40,10 @@ const cardStyle = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     borderRadius: 12,
+  },
+  contentStyle: {
+    justifyContent: "center",
+    alignItems: "center",
+    gap: 8,
   },
 });

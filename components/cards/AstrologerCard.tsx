@@ -11,7 +11,7 @@ type AstrologerCardType = {
   name: string;
   price: number;
   rating: string;
-  source: AvatarImageSource;
+  source: any;
 };
 
 const AstrologerCard = ({
@@ -26,7 +26,7 @@ const AstrologerCard = ({
         <Card.Content style={cardStyle.cardContentStyle}>
           {/* Card avatar and rating view */}
           <View>
-            <Avatar.Image source={source} size={100} />
+            <Avatar.Image source={{ uri: source }} size={100} />
             <View style={cardStyle.ratingStyle}>
               <Icon source="star" size={20} />
               <Text>{rating}</Text>
@@ -46,7 +46,7 @@ export default AstrologerCard;
 
 const cardStyle = StyleSheet.create({
   container: {
-    width: WIDTH / 3,
+    width: WIDTH / 2.8,
     backgroundColor: primaryColorLight,
     alignItems: "center",
     justifyContent: "center",

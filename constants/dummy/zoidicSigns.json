@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Aries",
+    "image": "https://img.icons8.com/ios-filled/100/ffb84d/aries.png"
+  },
+  {
+    "id": 2,
+    "name": "Taurus",
+    "image": "https://img.icons8.com/ios-filled/100/ffb84d/taurus.png"
+  },
+  {
+    "id": 3,
+    "name": "Gemini",
+    "image": "https://img.icons8.com/ios-filled/100/ffb84d/gemini.png"
+  },
+  {
+    "id": 4,
+    "name": "Cancer",
+    "image": "https://img.icons8.com/ios-filled/100/ffb84d/cancer.png"
+  },
+  {
+    "id": 5,
+    "name": "Leo",
+    "image": "https://img.icons8.com/ios-filled/100/ffb84d/leo.png"
+  },
+  {
+    "id": 6,
+    "name": "Virgo",
+    "image": "https://img.icons8.com/ios-filled/100/ffb84d/virgo.png"
+  },
+  {
+    "id": 7,
+    "name": "Libra",
+    "image": "https://img.icons8.com/ios-filled/100/ffb84d/libra.png"
+  },
+  {
+    "id": 8,
+    "name": "Scorpio",
+    "image": "https://img.icons8.com/ios-filled/100/ffb84d/scorpio.png"
+  },
+  {
+    "id": 9,
+    "name": "Sagittarius",
+    "image": "https://img.icons8.com/ios-filled/100/ffb84d/sagittarius.png"
+  },
+  {
+    "id": 10,
+    "name": "Capricorn",
+    "image": "https://img.icons8.com/ios-filled/100/ffb84d/capricorn.png"
+  },
+  {
+    "id": 11,
+    "name": "Aquarius",
+    "image": "https://img.icons8.com/ios-filled/100/ffb84d/aquarius.png"
+  },
+  {
+    "id": 12,
+    "name": "Pisces",
+    "image": "https://img.icons8.com/ios-filled/100/ffb84d/pisces.png"
+  }
+]

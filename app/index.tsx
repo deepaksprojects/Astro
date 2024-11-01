@@ -1,9 +1,11 @@
 import { HomeScreen, OnBoardingScreen } from "@/screens";
+import Numerology from "@/screens/services/numerology";
 import React, { useState } from "react";
 
 const Home = () => {
   const [loading, setLoading] = useState(false);
-  return <HomeScreen />;
+  return <Numerology />;
+  // return <HomeScreen />;
 };
 
 export default Home;

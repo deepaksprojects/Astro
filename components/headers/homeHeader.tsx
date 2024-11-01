@@ -7,7 +7,7 @@ import { WhiteColor } from "@/constants/styles";
 const HomeHeader = () => {
   return (
     <View style={headerStyle.container}>
-      <Avatar.Image size={60} source={AvatarImage} />
+      <Avatar.Image size={50} source={AvatarImage} />
       <View>
         <Text variant="labelMedium" style={[WhiteColor]}>
           Hello User
