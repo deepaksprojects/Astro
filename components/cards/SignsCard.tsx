@@ -35,7 +35,7 @@ export default SignsCard;
 
 const cardStyle = StyleSheet.create({
   cardContainer: {
-    width: WIDTH / 5,
+    width: WIDTH / 4.5,
     backgroundColor: primaryColorLight,
     alignItems: "center",
     justifyContent: "center",
